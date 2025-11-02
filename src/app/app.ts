@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
+import { BannerComponent } from "./components/banner/banner";
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [BannerComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
