@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { BoasVindas } from "./boas-vindas/boas-vindas";
 import { Conta } from "./conta/conta";
 
@@ -10,5 +10,5 @@ import { Conta } from "./conta/conta";
 })
 export class BannerComponent {
   dataAtual = new Date();
-
+  saldo = input.required<number>();
 }
